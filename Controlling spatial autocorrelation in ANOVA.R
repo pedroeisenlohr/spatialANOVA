@@ -4,8 +4,8 @@
 ### After Eisenlohr (2014)
 ### Released on: 10 August, 2017
 
-### If you identify any problem or have any suggestion to improve this code, please contact the author of the manuscript (pedrov.eisenlohr@gmail.com).
-### This code was prepared and edited by Danilo R.M. Neves (University of Leeds) and Pedro V. Eisenlohr (Universidade Federal de Minas Gerais), with the help of Mário José Marques Azevedo (Universidade Estadual de Campinas), considering the following references:
+### If you identify any problem or have any suggestion to improve this code, please contact me (pedrov.eisenlohr@gmail.com).
+### This code was prepared and edited by Danilo R.M. Neves (University of Leeds) and Pedro V. Eisenlohr (Universidade Federal de Minas Gerais), with the help of MÃ¡rio JosÃ© Marques Azevedo (Universidade Estadual de Campinas), considering the following references:
 # 1. Legendre, P., D. Borcard and D. W. Roberts. 2012. Variation partitioning involving orthogonal spatial eigenfunction submodels. Ecology 93: 1234-1240.
 # 2. Borcard, D., F. Gillet & P. Legendre. 2011. Numerical Ecology with R. Springer, New York, 302p.
 # 3. Peres-Neto, P. R. and P. Legendre. 2010. Estimating and controlling for spatial structure in the study of ecological communities. Global Ecology and Biogeography 19: 174-184.
