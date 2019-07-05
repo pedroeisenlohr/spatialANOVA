@@ -41,7 +41,7 @@ names(candidates)
 
 ### Optimization the selection of a subset of SWM among the candidates generated above,
 ### using the corrected significance threshold calculated ("MIR"):
-mod <- lm(Y ~ treat, data=X)
+mod <- lm(Y ~ treat, data=matrix)
 summary(mod)
 res <- residuals(mod)
 (W_sel_MIR <- listw.select(res, candidates, MEM.autocor = "positive", method = "MIR",
