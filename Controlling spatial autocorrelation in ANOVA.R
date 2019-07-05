@@ -73,9 +73,9 @@ W_sel_MIR$best.id
 
 ### Testing the significance of the treatment, discouting the effect of 
 ### selected MEMs:
-environment2 <- cbind(X, W_sel_MIR$best$MEM.select)
-head(environment2)
-mod_final <- lm(Y ~ treat + ., data = as.data.frame(environment2))
+matrix2 <- cbind(matrix, W_sel_MIR$best$MEM.select)
+head(matrix2)
+mod_final <- lm(Y ~ treat + ., data = as.data.frame(matrix2))
 anova<-aov(mod_final)
 summary(anova)
 
