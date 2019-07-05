@@ -10,11 +10,8 @@
 setwd(choose.dir())
 getwd()
 
-
 # Load the required packages
 library(adespatial)
-library(vegan)
-
 
 ### Importing and verifying data matrices:
 matrix<-read.table(file.choose(),row.names=1,header=T,sep=",") #Include treat (groups) and Y (response variable)
