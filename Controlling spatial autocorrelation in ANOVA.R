@@ -77,5 +77,28 @@ plot(TukeyHSD(anova, "treat"))
 
 # Important: don't forget to verify also the residuals normality and homogeneity of variances assumptions, since ANOVA is a parametric test!
 
+
+### Permutation approach (alternative to classic ANOVA)
+# This step follows https://rcompanion.org/rcompanion/d_06a.html
+if(!require(coin)){install.packages("coin")}
+if(!require(FSA)){install.packages("FSA")}
+if(!require(rcompanion)){install.packages("rcompanion")}
+if(!require(multcompView)){install.packages("multcompView")}
+
+library(coin)
+independence_test(Y ~ treat + ., 
+                  data = as.data.frame(matrix2))
+
+library(rcompanion)
+(PM = pairwisePermutationMatrix(Y ~ treat + ., 
+                               data = as.data.frame(matrix2),
+                               method="fdr"))
+
+multcompLetters(PM$Adjusted,
+                compare="<",
+                threshold=0.05,
+                Letters=letters,
+                reversed = FALSE)
+
 save.image()
 # End.
