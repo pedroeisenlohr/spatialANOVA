@@ -83,5 +83,7 @@ summary(anova)
 TukeyHSD(anova, "treat", ordered = TRUE)
 plot(TukeyHSD(anova, "treat"))
 
+# Important: don't forget to verify also the residuals normality and homogeneity of variances assumptions, since ANOVA is a parametric test!
+
 save.image()
 # End.
