@@ -12,7 +12,6 @@ getwd()
 
 
 # Load the required packages
-# (vegan must be loaded after ade4 to avoid some conflicts)
 library(adespatial)
 library(vegan)
 
