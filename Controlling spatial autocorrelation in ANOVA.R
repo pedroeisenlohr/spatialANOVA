@@ -5,10 +5,6 @@
 ### Released on: 04 July, 2019
 
 
-### Preparing data matrices:
-# X matrix: response variable + groups
-# ll matrix: latitude and longitude
-
 # Define the working directory.
 # Each user should adjust this!
 setwd(choose.dir())
